@@ -10,8 +10,8 @@ from detrend import lin_window_ovrlp, exp_detrend, poly_detrend, poly_detrend1
 
 # 读取 MATLAB 输出的 CSV 文件
 data = pd.read_csv('S_real.csv', header=None)
-data_noise = pd.read_csv('S_noise.csv', header=None)
-data_noise = data_noise.values.flatten()
+#data_noise = pd.read_csv('S_noise.csv', header=None)
+#data_noise = data_noise.values.flatten()
 data_0 = pd.read_csv('S0.csv', header=None)
 data_0 = data_0.values.flatten()
 fs = 3840; #采样频率
