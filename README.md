@@ -1,6 +1,6 @@
 # Signal adaptive processing
 This repository contains two main components for processing signals contaminated with noise: high-frequency denoising using MATLAB and low-frequency detrending using Python. The workflow involves first applying high-frequency denoising to the original signal and then removing low-frequency components from the denoised signal.
-![Uploading p1.png…]()
+<img width="477" alt="p1" src="https://github.com/user-attachments/assets/8efb1333-7cb2-4c9c-ae56-24e850bd49d1">
 ## Workflow Overview
 #### High-Frequency Denoising: 
 Implemented in MATLAB using a CPO (Crown Porcupine Optimization) algorithm to optimize Variational Mode Decomposition (VMD) for effective denoising.
