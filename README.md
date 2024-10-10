@@ -29,7 +29,7 @@ pip install numpy pandas matplotlib scipy
 ```
 #### VMDpy can be installed from its GitHub repository:
 ```bash
-pip install git+https://github.com/laurentperrinet/VMDpy.git
+pip install git+https://github.com/2025ICASSP-MASEC/Lowf processing/vmdpy.py
 ````
 ## Usage
 #### Step 1: High-Frequency Denoising (MATLAB)
