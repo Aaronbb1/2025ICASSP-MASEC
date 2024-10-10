@@ -1,4 +1,4 @@
-# Signal adaptive processing
+![noise](https://github.com/user-attachments/assets/b2b554bb-b4b1-41f6-9eac-941d23935049)# Signal adaptive processing
 This repository contains two main components for processing signals contaminated with noise: high-frequency denoising using MATLAB and low-frequency detrending using Python. The workflow involves first applying high-frequency denoising to the original signal and then removing low-frequency components from the denoised signal.
 
 ## Workflow Overview
@@ -22,7 +22,7 @@ The Python script requires the following libraries:
 ·pandas
 ·matplotlib
 ·scipy
-·VMDpy (a Python implementation of the VMD algorithm)
+·VMDpy (a Python implementation of the VMD algorithm)...
 #### You can install the required libraries using pip:
 ```bash
 pip install numpy pandas matplotlib scipy
