@@ -3,7 +3,7 @@ This repository contains two main components for processing signals contaminated
 
 ## Workflow Overview
 #### High-Frequency Denoising: 
-Implemented in MATLAB using a CPO (Cuckoo Search Optimization) algorithm to optimize Variational Mode Decomposition (VMD) for effective denoising.
+Implemented in MATLAB using a CPO (Crown Porcupine Optimization) algorithm to optimize Variational Mode Decomposition (VMD) for effective denoising.
 #### Low-Frequency Detrending: 
 Implemented in Python, this step removes low-frequency trends from the denoised signal using polynomial detrending and VMD.
 ## Key Features
