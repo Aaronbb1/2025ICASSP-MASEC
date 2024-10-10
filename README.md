@@ -26,6 +26,7 @@ The Python script requires the following libraries:
 #### You can install the required libraries using pip:
 ```bash
 pip install numpy pandas matplotlib scipy
+
 #### VMDpy can be installed from its GitHub repository:
 ```bash
 npm install your-package-name
