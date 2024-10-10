@@ -24,8 +24,11 @@ The Python script requires the following libraries:
 ·scipy
 ·VMDpy (a Python implementation of the VMD algorithm)
 #### You can install the required libraries using pip:
+```bash
 pip install numpy pandas matplotlib scipy
 #### VMDpy can be installed from its GitHub repository:
+```bash
+npm install your-package-name
 pip install git+https://github.com/laurentperrinet/VMDpy.git
 ## Usage
 #### Step 1: High-Frequency Denoising (MATLAB)
