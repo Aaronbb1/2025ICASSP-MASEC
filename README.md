@@ -22,4 +22,36 @@ The Python script requires the following libraries:
 ·matplotlib
 ·scipy
 ·VMDpy (a Python implementation of the VMD algorithm)
-## You can install the required libraries using pip:
+### You can install the required libraries using pip:
+pip install numpy pandas matplotlib scipy
+### VMDpy can be installed from its GitHub repository:
+pip install git+https://github.com/laurentperrinet/VMDpy.git
+## Usage
+### Step 1: High-Frequency Denoising (MATLAB)
+1.Prepare your data: Ensure your original signal data is in a suitable format for MATLAB.
+2.Run the MATLAB script: Execute the MATLAB script to perform high-frequency denoising.
+run('high_freq_denoising.m');
+3.Output: The denoised signal will be saved as a .csv file (e.g., denoised_signal.csv).
+### Step 2: Low-Frequency Detrending (Python)
+1.Prepare your data: Ensure the denoised signal is saved as S_real.csv and the original signal (if available) as S0.csv.
+2.Run the Python script: Execute the Python script in your terminal or command prompt.
+python detrend_signal.py
+3.View the results: The script will generate plots and save them as .png files. It will also output the reconstructed signal to a .csv file named S_rec.csv.
+### Output
+Plots: The Python script generates several plots to visualize the detrending process, the VMD decomposition, and the SNR of each IMF.
+Reconstructed Signal: A .csv file containing the reconstructed signal after detrending and denoising.
+## Example
+Here's an example of how the complete workflow processes the signal:
+### High-Frequency Denoising:
+The MATLAB script reads the original signal, applies CPO-optimized VMD, and outputs a denoised signal.
+### Low-Frequency Detrending:
+The Python script reads the denoised signal, applies polynomial detrending, performs VMD to decompose the signal into IMFs, and reconstructs the signal based on SNR criteria.
+## Contributing
+Contributions to this project are welcome. If you find any issues or have suggestions for improvements, please create an issue or submit a pull request.
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.**
+
+
+
+
+
