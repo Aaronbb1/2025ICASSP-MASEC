@@ -32,7 +32,7 @@ pip install git+https://github.com/laurentperrinet/VMDpy.git
 1.Prepare your data: Ensure your original signal data is in a suitable format for MATLAB.
 2.Run the MATLAB script: Execute the MATLAB script to perform high-frequency denoising.
 run('high_freq_denoising.m');
-3.Output: The denoised signal will be saved as a .csv file (e.g., denoised_signal.csv).
+3.Output: The denoised signal will be saved as a .csv file (e.g., S.csv).
 #### Step 2: Low-Frequency Detrending (Python)
 1.Prepare your data: Ensure the denoised signal is saved as S_real.csv and the original signal (if available) as S0.csv.
 2.Run the Python script: Execute the Python script in your terminal or command prompt.
