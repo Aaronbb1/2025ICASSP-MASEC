@@ -1,19 +1,19 @@
 # Signal Denoising and Detrending
 This repository contains two main components for processing signals contaminated with noise: high-frequency denoising using MATLAB and low-frequency detrending using Python. The workflow involves first applying high-frequency denoising to the original signal and then removing low-frequency components from the denoised signal.
 
-### Workflow Overview
+## Workflow Overview
 #### High-Frequency Denoising: 
 Implemented in MATLAB using a CPO (Cuckoo Search Optimization) algorithm to optimize Variational Mode Decomposition (VMD) for effective denoising.
 #### Low-Frequency Detrending: 
 Implemented in Python, this step removes low-frequency trends from the denoised signal using polynomial detrending and VMD.
-### Key Features
+## Key Features
 #### High-Frequency Denoising:
 ·Utilizes CPO optimization for VMD to effectively remove high-frequency noise from the signal.
 #### Low-Frequency Detrending:
 ·Polynomial detrending to eliminate low-frequency trends.
 ·VMD to decompose the signal into Intrinsic Mode Functions (IMFs).
 ·SNR-based reconstruction to select the most relevant IMFs for signal reconstruction.
-### Dependencies
+## Dependencies
 ### MATLAB
 Ensure you have MATLAB installed with the necessary toolboxes for signal processing.
 ### Python
@@ -27,7 +27,7 @@ The Python script requires the following libraries:
 pip install numpy pandas matplotlib scipy
 ### VMDpy can be installed from its GitHub repository:
 pip install git+https://github.com/laurentperrinet/VMDpy.git
-### Usage
+## Usage
 #### Step 1: High-Frequency Denoising (MATLAB)
 1.Prepare your data: Ensure your original signal data is in a suitable format for MATLAB.
 2.Run the MATLAB script: Execute the MATLAB script to perform high-frequency denoising.
@@ -41,15 +41,15 @@ python detrend_signal.py
 #### Output
 Plots: The Python script generates several plots to visualize the detrending process, the VMD decomposition, and the SNR of each IMF.
 Reconstructed Signal: A .csv file containing the reconstructed signal after detrending and denoising.
-### Example
+## Example
 Here's an example of how the complete workflow processes the signal:
 #### High-Frequency Denoising:
 The MATLAB script reads the original signal, applies CPO-optimized VMD, and outputs a denoised signal.
 #### Low-Frequency Detrending:
 The Python script reads the denoised signal, applies polynomial detrending, performs VMD to decompose the signal into IMFs, and reconstructs the signal based on SNR criteria.
-### Contributing
+## Contributing
 Contributions to this project are welcome. If you find any issues or have suggestions for improvements, please create an issue or submit a pull request.
-### License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.**
 
 
