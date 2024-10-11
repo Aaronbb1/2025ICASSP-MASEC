@@ -39,7 +39,7 @@ pip install git+https://github.com/2025ICASSP-MASEC/Lowf processing/vmdpy.py
 #### Step 1: High-Frequency Denoising (MATLAB)
 1.Prepare your data: Ensure your original signal data is in a suitable format for MATLAB.
 2.Run the MATLAB script: Execute the MATLAB script to perform high-frequency denoising.
-run('high_freq_denoising.m');
+run('main1.m');
 3.Output: The denoised signal will be saved as a .csv file (e.g., S_real.csv).
 #### Step 2: Low-Frequency Detrending (Python)
 1.Prepare your data: Ensure the denoised signal is saved as S_real.csv and the clean original signal (if available) as S0.csv.
