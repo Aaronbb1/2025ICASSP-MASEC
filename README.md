@@ -1,5 +1,5 @@
 # Signal adaptive processing
-This repository contains two main components for processing signals contaminated with noise: high-frequency denoising using MATLAB and low-frequency removal of low-frequency components using Python. The workflow involves first combining with the CEEMDAN method the IMF components containing high-frequency information were further extracted from the original signal applying high-frequency denoising and using adaptive weighted sliding window method to remove the low-frequency components from the denoising signal. Finally, the method implements an adaptive signal processing strategy.
+This repository contains two main components for processing signals contaminated with noise: high-frequency denoising using MATLAB and low-frequency removal of low-frequency components using Python. The workflow involves first combining with the CEEMDAN method that IMF components containing high-frequency information are further extracted from the original signal applying high-frequency denoising and using adaptive weighted sliding window method to remove the low-frequency components from the denoising signal. Finally, the method implements an adaptive signal processing strategy.
 
 <div style="text-align: center">
   <img alt="p1" src="https://github.com/user-attachments/assets/8efb1333-7cb2-4c9c-ae56-24e850bd49d1">
@@ -7,9 +7,9 @@ This repository contains two main components for processing signals contaminated
 
 ## Workflow Overview
 #### High-Frequency Denoising: 
-Implemented in MATLAB using a CPO (Crown Porcupine Optimization) algorithm to optimize Variational Mode Decomposition (VMD) for effective denoising.
+Implemented in MATLAB using a CPO (Crown Porcupine Optimization) algorithm to optimize Variational Mode Decomposition (VMD) for effective denoise of our needed IMFs combining with the CEEMDAN method that we search.
 #### Low-Frequency Detrending: 
-Implemented in Python, this step removes low-frequency trends from the denoised signal using polynomial detrending and VMD.
+Implemented in Python, this step removes low-frequency trends from the denoised signal using polynomial detrending and VMD. In the process, we used the mean, higher-order polynomial fitting and the double traversal method to further optimize our strategy
 ## Key Features
 #### High-Frequency Denoising:
 ·Utilizes CPO optimization for VMD to effectively remove high-frequency noise from the signal.
@@ -49,7 +49,9 @@ VMD_denoise.py
 #### Output
 Plots: The Python script generates several plots to visualize the detrending process, the VMD decomposition, and the SNR of each IMF.
 Reconstructed Signal: A .csv file containing the reconstructed signal after detrending and denoising.
+
 ![PSD补充](https://github.com/user-attachments/assets/9cc908f7-0f9a-47b4-b6b8-ce132454cac5)
+
 ## Example
 Here's an example of how the complete workflow processes the signal:
 #### High-Frequency Denoising:
