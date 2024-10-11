@@ -44,11 +44,12 @@ run('main1.m');
 #### Step 2: Low-Frequency Detrending (Python)
 1.Prepare your data: Ensure the denoised signal is saved as S_real.csv and the clean original signal (if available) as S0.csv.
 2.Run the Python script: Execute the Python script in your terminal or command prompt.
-python detrend_signal.py
+VMD_denoise.py
 3.View the results: The script will generate plots and save them as .png files. It will also output the reconstructed signal to a .csv file named S_rec.csv.
 #### Output
 Plots: The Python script generates several plots to visualize the detrending process, the VMD decomposition, and the SNR of each IMF.
 Reconstructed Signal: A .csv file containing the reconstructed signal after detrending and denoising.
+![PSD补充](https://github.com/user-attachments/assets/9cc908f7-0f9a-47b4-b6b8-ce132454cac5)
 ## Example
 Here's an example of how the complete workflow processes the signal:
 #### High-Frequency Denoising:
